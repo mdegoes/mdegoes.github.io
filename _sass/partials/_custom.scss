@@ -1,0 +1,391 @@
+header {
+  text-align: center;
+}
+
+//COLORS
+$intColorDefault: #EA2F2F;
+$intColorDefaultH: #DB4C3E;
+$c1: #EA2F2F;
+$c2: #F74A14;
+$c3: #FF6F1F;
+$c4: #12C7FF;
+$c5: #00A4FF;
+$c6: #0080FF;
+
+//FONTS
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 50px;
+	color: #1E1F23;
+}
+
+h2 {
+	font-weight: 800;
+	font-size: 30px;
+	color: #1E1F23;
+}
+
+h3 {
+	font-weight: 800;
+	font-size: 24px;
+	color: #1E1F23;
+}
+
+h4 {
+	font-weight: 800;
+	font-size: 18px;
+	color: #1E1F23;
+}
+
+h5 {
+	font-weight: 800;
+	font-size: 12px;
+	color: #313747;
+}
+
+h6 {
+	font-weight: 800;
+	font-size: 12px;
+	color: #313747;
+}
+
+p {
+	font-size: 14px;
+}
+
+p, li, input, label {
+  font-family: 'Raleway', sans-serif;
+  color: #1E1F23;
+}
+
+//HOME
+.page-content {
+	&.active {
+		filter: blur(2px);
+	}
+}
+
+body {
+	&.locked {
+		overflow: hidden;
+	}
+}
+
+//MODAL
+#modal {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	background: rgba(255,255,255,0.8);
+	&.active {
+		height: 100%;
+		.foreground {
+			width: 100%;
+			max-width: 1024px;
+			height: 90%;
+			margin: 40px auto;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			overflow-y: scroll;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+//HEADER
+.coffee {
+	background: url("../images/background-header.jpg") no-repeat 50% 50%; 
+	background-size: 120%;
+	filter: grayscale(100%);
+	position: relative;
+	.container {
+		padding: 200px 0 400px 0;
+		h1 {
+			color: #fff;
+		}
+		h4 {
+			color: #fff;
+		}
+	}
+	.tshd {
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		height: 200px;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.4+0,0+100 */
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	}
+	.bshd {
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		height: 200px;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.4+100 */
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+
+	}
+}
+
+@keyframes animatedBackground {
+	0% {background-color: #fff;}
+	50% {background-color: $intColorDefaultH;}
+	100% {background-color: #fff;}
+}
+
+@keyframes cursorBlink {
+	0% {color: #fff;}
+	50% {color: #000;}
+	100% {color: #fff;}
+}
+
+//NAVIGATION
+.nav {
+	text-align: left;
+	margin-top: 10px;
+	a {
+		display: inline-block;
+		margin: 10px 10px 10px 0px;
+		font-family: 'Raleway', sans-serif;
+		color: $c6;
+		text-decoration: none;
+		text-transform: uppercase;
+		.icon {
+			display: inline-block;
+			width: 26px;
+			margin-right: 2px;
+			img {
+				width: 110%;
+				height: 110%;
+				margin-left: -5%;
+				margin-right: -5%;
+				margin-top: -5%;
+				margin-bottom: -5%;
+				opacity: 0.0;
+				vertical-align: text-bottom;
+			}
+		}
+		&:hover {
+			color: $c5;
+			.icon {
+				animation: animatedBackground 2s linear infinite;
+				img {
+					opacity: 1.0;
+				}
+			}
+		}
+	}
+}
+
+#qa {
+	.questions {
+		overflow: hidden;
+		margin: 20px 0;
+		&.disabled {
+	        p {
+	          opacity: 0.4;
+	        }
+	    }
+		p {
+			display: inline-block;
+			cursor: help;
+			border: 1px solid #f2f2f2;
+			padding: 3px 10px;
+			border-radius: 30px;
+			margin-top: 5px;
+			&:hover {
+				color: #fff;
+				background-color: #000;
+			}
+			&.hidden {
+	          position: absolute;
+	          bottom: 0px;
+	          margin-left: 200px;
+	          opacity: 0.0;
+	        }
+	        &.hidden-alt {
+	          position: absolute;
+	          bottom: 0px;
+	          right: -1000px;
+	          opacity: 0.0;
+	        }
+		}
+	}
+	.answers {
+		min-height: 100px;
+	    .avatar {
+	    	display: inline-block;
+	    	max-width: 50px;
+	    	vertical-align: top;
+	    	padding-right: 10px;
+	    }
+	    p {
+	    	min-height: 50px;
+	        display: inline-block;
+	        text-align: left;
+	        max-width: 90%;
+	        color: #333;
+	        box-sizing: border-box;
+	    }
+	    a {
+	        color: #000;
+	    }
+	    .cursor {
+	    	animation: cursorBlink 1s linear infinite;
+	    }
+    }
+}
+
+#skills {
+	.block {
+		margin-top: 20px;
+		&.c1 p:hover {
+			background-color: $c1;
+		}
+		&.c2 p:hover {
+			background-color: $c2;
+		}
+		&.c3 p:hover {
+			background-color: $c3;
+		}
+		&.c4 p:hover {
+			background-color: $c4;
+		}
+		&.c5 p:hover {
+			background-color: $c5;
+		}
+		&.c6 p:hover {
+			background-color: $c6;
+		}
+		p {
+			transition: 0.425s;
+			border-radius: 20px;
+			text-transform: capitalize;
+			display: inline-block;
+			height: 22px;
+			margin-bottom: 2px;
+			&:hover {
+				color: #fff;
+				padding: 0 8px;
+			}
+		}
+	}
+}
+#portfolio {
+	.stats {
+		.block {
+			margin-top: 20px;
+			span {
+				font-size: 70px;
+				font-family: montserrat, sans-serif;
+				font-weight: 800;
+				line-height: 60px;
+			}
+			p {
+				font-weight: 300;
+			}
+			a {
+				margin-left: 10px;
+				color: $c6;
+				&:hover {
+					color: $c5;
+				}
+			}
+		}
+	}
+}
+#photo {
+	.visual {
+		position: relative;
+		background: url("../images/mtdegoes2.jpg") no-repeat center;
+		background-size: contain;
+		@include abs-aspectratio(1.15, 1);
+		filter: grayscale(1.0);
+		.controls {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			p {
+				font-family: 'Oswald', serif;
+				position: absolute;
+				color: #fff;
+				cursor: pointer;
+				&:hover span {
+					opacity: 1.0;
+				}
+				span {
+					opacity: 0.0;
+					@include abs-transition(0.425s);
+				}
+				i {
+					padding: 0px 5px;
+				}
+				&.hat {
+					top: 13%;
+					left: 32%;
+				}
+				&.mind {
+					top: 29%;
+					left: 40%;
+				}
+				&.ears {
+					top: 38%;
+					left: 16%;
+				}
+				&.eyes {
+					top: 38%;
+					left: 62%;
+				}
+				&.hair {
+					top: 73%;
+					left: 46%;
+				}
+				&.shirt {
+					top: 89%;
+					left: 24%;
+				}
+			}
+		}
+	}
+}
+#contact {
+	.links {
+		text-align: center;
+		a {
+			width: 40px;
+			height: 40px;
+			display: inline-block;
+			color: $c6;
+			border: 10px solid $c6;
+			padding: 22px;
+			border-radius: 100%;
+			margin: 10px;
+			transition: 0.425s;
+			i {
+				font-size: 40px;
+			}
+			&:hover {
+				color: $c5;
+				border-color: $c5;
+				padding: 18px;
+			}
+		}
+	}
+}

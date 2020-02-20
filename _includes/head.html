@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Raleway:300,300i,400,400i,500,500i,600,600i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/custom.js"></script>
+  <script src="https://kit.fontawesome.com/b7fe16d870.js" crossorigin="anonymous"></script>
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+
+  <!--FAVICONS-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+</head>
