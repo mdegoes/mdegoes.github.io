@@ -475,9 +475,9 @@ body.locked {
         top: 89%;
         left: 24%; }
 
-#contact .links {
+#contact .links.print-no {
   text-align: center; }
-  #contact .links a {
+  #contact .links.print-no a {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -487,9 +487,46 @@ body.locked {
     border-radius: 100%;
     margin: 10px;
     transition: 0.425s; }
-    #contact .links a i {
+    #contact .links.print-no a i {
       font-size: 40px; }
-    #contact .links a:hover {
+    #contact .links.print-no a:hover {
       color: #00A4FF;
       border-color: #00A4FF;
       padding: 18px; }
+#contact .links.print-yes a {
+  display: block;
+  margin: 10px 10px 10px 0px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #0080FF;
+  text-decoration: none; }
+  #contact .links.print-yes a i {
+    font-size: 20px;
+    margin-right: 10px; }
+
+.print-yes {
+  display: none; }
+
+@media print {
+  .coffee .container {
+    padding-top: 200px;
+    padding-bottom: 200px; }
+  .coffee .col-50 {
+    max-width: 230px; }
+
+  .print-no {
+    display: none; }
+
+  .print-yes {
+    display: block; }
+
+  #photo .visual .controls p span {
+    opacity: 1.0; }
+
+  .abs-holder {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px; }
+
+  #contact {
+    padding-top: 0px; } }

@@ -117,17 +117,13 @@ $(document).ready(function(){
   });
 
   //MOVING ILLUSION
-  $(".coffee").mousemove(function(event){
+  /*$(".coffee").mousemove(function(event){
     var positionH = event.pageX,
         positionV = event.pageY,
         pageH = $(".coffee").width(),
         pageV = $(".coffee").height(),
         pageHP = (positionH / pageH).toFixed(2) * 100,
         pageVP = (positionV / pageV).toFixed(2) * 100;
-
-    console.log(pageHP);
-    console.log(pageVP);
-  
-  });
+  });*/
 });
 
