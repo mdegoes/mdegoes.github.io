@@ -99,14 +99,17 @@ h2 + h1, h3 + h1, h3 + h2, h4 + h1, h4 + h2, h4 + h3, h5 + h1, h5 + h2, h5 + h3,
 //<?l><li>
 //Standard
 ol, ul {
-  margin-left: 2em;
+  margin-left: 1.5em;
 }
 ol li, ul li {
-  font-size: 1.0em;
+  font-size: 14px;
   line-height: 1.2em;
 }
 //Relational
-p + ul, p + ol, ol + ol, ol + ul, ol + p, ul + ul, ul + ol, ul + p {
+p + ul, p + ol {
+  margin-top: 0.25em;
+}
+ol + ol, ol + ul, ol + p, ul + ul, ul + ol, ul + p {
   margin-top: 1em;
 }
 ol + h1, ol + h2, ol + h3, ol + h4, ol + h5, ol + h6, ul + h1, ul + h2, ul + h3, ul + h4, ul + h5, ul + h6 {

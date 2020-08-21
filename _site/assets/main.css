@@ -54,13 +54,16 @@ h2 + h1, h3 + h1, h3 + h2, h4 + h1, h4 + h2, h4 + h3, h5 + h1, h5 + h2, h5 + h3,
   margin-top: 2em; }
 
 ol, ul {
-  margin-left: 2em; }
+  margin-left: 1.5em; }
 
 ol li, ul li {
-  font-size: 1.0em;
+  font-size: 14px;
   line-height: 1.2em; }
 
-p + ul, p + ol, ol + ol, ol + ul, ol + p, ul + ul, ul + ol, ul + p {
+p + ul, p + ol {
+  margin-top: 0.25em; }
+
+ol + ol, ol + ul, ol + p, ul + ul, ul + ol, ul + p {
   margin-top: 1em; }
 
 ol + h1, ol + h2, ol + h3, ol + h4, ol + h5, ol + h6, ul + h1, ul + h2, ul + h3, ul + h4, ul + h5, ul + h6 {
@@ -197,22 +200,22 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: 800;
   font-size: 50px;
-  color: #1E1F23; }
+  color: #3a393d; }
 
 h2 {
   font-weight: 800;
   font-size: 30px;
-  color: #1E1F23; }
+  color: #3a393d; }
 
 h3 {
   font-weight: 800;
   font-size: 24px;
-  color: #1E1F23; }
+  color: #3a393d; }
 
 h4 {
   font-weight: 800;
   font-size: 18px;
-  color: #1E1F23; }
+  color: #3a393d; }
 
 h5 {
   font-weight: 800;
@@ -229,7 +232,7 @@ p {
 
 p, li, input, label {
   font-family: 'Raleway', sans-serif;
-  color: #1E1F23; }
+  color: #48484c; }
 
 .page-content.active {
   filter: blur(2px); }
@@ -378,7 +381,7 @@ body.locked {
     display: inline-block;
     text-align: left;
     max-width: 90%;
-    color: #333;
+    color: #3a393d;
     box-sizing: border-box; }
   #qa .answers a {
     color: #000; }
@@ -418,65 +421,80 @@ body.locked {
     font-weight: 800;
     line-height: 60px; }
   #portfolio .stats .block p {
-    font-weight: 300; }
+    font-weight: 400; }
   #portfolio .stats .block a {
-    margin-left: 10px;
-    color: #0080FF; }
-    #portfolio .stats .block a:hover {
-      color: #00A4FF; }
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px; }
+    #portfolio .stats .block a.one {
+      background: #fff url("../images/portfolio/one.jpg") no-repeat 50% 50%;
+      background-size: cover; }
+    #portfolio .stats .block a.two {
+      background: #fff url("../images/portfolio/two.jpg") no-repeat 50% 50%;
+      background-size: cover; }
+    #portfolio .stats .block a.three {
+      background: #fff url("../images/portfolio/three.jpg") no-repeat 50% 50%;
+      background-size: cover; }
+    #portfolio .stats .block a.four {
+      background: #fff url("../images/portfolio/four.jpg") no-repeat 50% 50%;
+      background-size: cover; }
 
-#photo .visual {
+#contact .visual {
+  margin-top: 20px;
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
   position: relative;
-  background: url("../images/mtdegoes2.jpg") no-repeat center;
-  background-size: contain;
+  background: url("../images/mtdegoes.jpg") no-repeat center;
+  background-size: cover;
   position: relative;
   filter: grayscale(1); }
-  #photo .visual:before {
+  #contact .visual:before {
     display: block;
     content: " ";
     width: 100%;
     padding-top: 86.9565217391%; }
-  #photo .visual .controls {
+  #contact .visual .controls {
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%; }
-    #photo .visual .controls p {
+    #contact .visual .controls p {
       font-family: 'Oswald', serif;
       position: absolute;
       color: #fff;
       cursor: pointer; }
-      #photo .visual .controls p:hover span {
+      #contact .visual .controls p:hover span {
         opacity: 1.0; }
-      #photo .visual .controls p span {
+      #contact .visual .controls p span {
         opacity: 0.0;
         -webkit-transition: 0.425s;
         /* Safari */
         transition: 0.425s; }
-      #photo .visual .controls p i {
+      #contact .visual .controls p i {
         padding: 0px 5px; }
-      #photo .visual .controls p.hat {
+      #contact .visual .controls p.hat {
         top: 13%;
         left: 32%; }
-      #photo .visual .controls p.mind {
-        top: 29%;
+      #contact .visual .controls p.mind {
+        top: 20%;
         left: 40%; }
-      #photo .visual .controls p.ears {
-        top: 38%;
-        left: 16%; }
-      #photo .visual .controls p.eyes {
-        top: 38%;
-        left: 62%; }
-      #photo .visual .controls p.hair {
-        top: 73%;
-        left: 46%; }
-      #photo .visual .controls p.shirt {
+      #contact .visual .controls p.ears {
+        top: 32%;
+        left: 28%; }
+      #contact .visual .controls p.eyes {
+        top: 32%;
+        left: 60%; }
+      #contact .visual .controls p.hair {
+        top: 63%;
+        left: 40%; }
+      #contact .visual .controls p.shirt {
         top: 89%;
         left: 24%; }
-
 #contact .links.print-no {
-  text-align: center; }
+  text-align: left; }
   #contact .links.print-no a {
     width: 40px;
     height: 40px;

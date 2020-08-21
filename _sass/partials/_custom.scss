@@ -23,25 +23,25 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-weight: 800;
 	font-size: 50px;
-	color: #1E1F23;
+	color: #3a393d;
 }
 
 h2 {
 	font-weight: 800;
 	font-size: 30px;
-	color: #1E1F23;
+	color: #3a393d;
 }
 
 h3 {
 	font-weight: 800;
 	font-size: 24px;
-	color: #1E1F23;
+	color: #3a393d;
 }
 
 h4 {
 	font-weight: 800;
 	font-size: 18px;
-	color: #1E1F23;
+	color: #3a393d;
 }
 
 h5 {
@@ -62,7 +62,7 @@ p {
 
 p, li, input, label {
   font-family: 'Raleway', sans-serif;
-  color: #1E1F23;
+  color: #48484c;
 }
 
 //HOME
@@ -241,7 +241,7 @@ body {
 	        display: inline-block;
 	        text-align: left;
 	        max-width: 90%;
-	        color: #333;
+	        color: #3a393d;
 	        box-sizing: border-box;
 	    }
 	    a {
@@ -299,23 +299,42 @@ body {
 				line-height: 60px;
 			}
 			p {
-				font-weight: 300;
+				font-weight: 400;
 			}
 			a {
-				margin-left: 10px;
-				color: $c6;
-				&:hover {
-					color: $c5;
+				display: block;
+				width: 150px;
+				height: 150px;
+				border-radius: 75px;
+				&.one {
+					background: #fff url("../images/portfolio/one.jpg") no-repeat 50% 50%; 
+					background-size: cover;
+				}
+				&.two {
+					background: #fff url("../images/portfolio/two.jpg") no-repeat 50% 50%; 
+					background-size: cover;
+				}
+				&.three {
+					background: #fff url("../images/portfolio/three.jpg") no-repeat 50% 50%; 
+					background-size: cover;
+				}
+				&.four {
+					background: #fff url("../images/portfolio/four.jpg") no-repeat 50% 50%; 
+					background-size: cover;
 				}
 			}
 		}
 	}
 }
-#photo {
+#contact {
 	.visual {
+		margin-top: 20px;
+		height: 300px;
+		width: 300px;
+		border-radius: 150px;
 		position: relative;
-		background: url("../images/mtdegoes2.jpg") no-repeat center;
-		background-size: contain;
+		background: url("../images/mtdegoes.jpg") no-repeat center;
+		background-size: cover;
 		@include abs-aspectratio(1.15, 1);
 		filter: grayscale(1.0);
 		.controls {
@@ -344,20 +363,20 @@ body {
 					left: 32%;
 				}
 				&.mind {
-					top: 29%;
+					top: 20%;
 					left: 40%;
 				}
 				&.ears {
-					top: 38%;
-					left: 16%;
+					top: 32%;
+					left: 28%;
 				}
 				&.eyes {
-					top: 38%;
-					left: 62%;
+					top: 32%;
+					left: 60%;
 				}
 				&.hair {
-					top: 73%;
-					left: 46%;
+					top: 63%;
+					left: 40%;
 				}
 				&.shirt {
 					top: 89%;
@@ -366,11 +385,9 @@ body {
 			}
 		}
 	}
-}
-#contact {
 	.links {
 		&.print-no {
-			text-align: center;
+			text-align: left;
 			a {
 				width: 40px;
 				height: 40px;
