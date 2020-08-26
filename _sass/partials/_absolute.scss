@@ -102,12 +102,13 @@ ol, ul {
   margin-left: 1.5em;
 }
 ol li, ul li {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.2em;
+  padding-bottom: 0.4em;
 }
 //Relational
 p + ul, p + ol {
-  margin-top: 0.25em;
+  margin-top: 0.5em;
 }
 ol + ol, ol + ul, ol + p, ul + ul, ul + ol, ul + p {
   margin-top: 1em;
