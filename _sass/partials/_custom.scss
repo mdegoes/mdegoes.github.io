@@ -206,13 +206,12 @@ body {
 		p {
 			display: inline-block;
 			cursor: help;
-			border: 1px solid #f2f2f2;
+			border: 1px solid $c6;
 			padding: 3px 10px;
 			border-radius: 30px;
 			margin-top: 5px;
 			&:hover {
-				color: #fff;
-				background-color: #000;
+				border-color: $c5;
 			}
 			&.hidden {
 	          position: absolute;
@@ -305,24 +304,28 @@ body {
 				display: block;
 				width: 150px;
 				height: 150px;
-				border-radius: 75px;
+				border-radius: 80px;
 				margin-left: auto;
 				margin-right: auto;
+				border: 4px solid $c6;
 				&.one {
-					background: #fff url("../images/portfolio/one.jpg") no-repeat 50% 50%; 
+					background: #fff url("../images/portfolio/one.jpg") no-repeat top center; 
 					background-size: cover;
 				}
 				&.two {
-					background: #fff url("../images/portfolio/two.jpg") no-repeat 50% 50%; 
+					background: #fff url("../images/portfolio/two.jpg") no-repeat top center; 
 					background-size: cover;
 				}
 				&.three {
-					background: #fff url("../images/portfolio/three.jpg") no-repeat 50% 50%; 
+					background: #fff url("../images/portfolio/three.jpg") no-repeat top center; 
 					background-size: cover;
 				}
 				&.four {
-					background: #fff url("../images/portfolio/four.jpg") no-repeat 50% 50%; 
+					background: #fff url("../images/portfolio/four.jpg") no-repeat top center; 
 					background-size: cover;
+				}
+				&:hover {
+					border-color: $c5;
 				}
 			}
 		}

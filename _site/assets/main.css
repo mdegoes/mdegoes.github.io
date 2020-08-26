@@ -353,13 +353,12 @@ body.locked {
   #qa .questions p {
     display: inline-block;
     cursor: help;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #0080FF;
     padding: 3px 10px;
     border-radius: 30px;
     margin-top: 5px; }
     #qa .questions p:hover {
-      color: #fff;
-      background-color: #000; }
+      border-color: #00A4FF; }
     #qa .questions p.hidden {
       position: absolute;
       bottom: 0px;
@@ -427,21 +426,24 @@ body.locked {
     display: block;
     width: 150px;
     height: 150px;
-    border-radius: 75px;
+    border-radius: 80px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    border: 4px solid #0080FF; }
     #portfolio .stats .block a.one {
-      background: #fff url("../images/portfolio/one.jpg") no-repeat 50% 50%;
+      background: #fff url("../images/portfolio/one.jpg") no-repeat top center;
       background-size: cover; }
     #portfolio .stats .block a.two {
-      background: #fff url("../images/portfolio/two.jpg") no-repeat 50% 50%;
+      background: #fff url("../images/portfolio/two.jpg") no-repeat top center;
       background-size: cover; }
     #portfolio .stats .block a.three {
-      background: #fff url("../images/portfolio/three.jpg") no-repeat 50% 50%;
+      background: #fff url("../images/portfolio/three.jpg") no-repeat top center;
       background-size: cover; }
     #portfolio .stats .block a.four {
-      background: #fff url("../images/portfolio/four.jpg") no-repeat 50% 50%;
+      background: #fff url("../images/portfolio/four.jpg") no-repeat top center;
       background-size: cover; }
+    #portfolio .stats .block a:hover {
+      border-color: #00A4FF; }
 
 #contact .visual {
   margin-top: 20px;
