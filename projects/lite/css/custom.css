@@ -191,7 +191,7 @@ p.right {
 }
 
 .row {
-	margin-bottom: 4px;
+	margin-bottom: 10px;
 	cursor: pointer;
 }
 
@@ -211,7 +211,7 @@ span {
 	height: 30px;
 	perspective: 100px;
 	border-radius: 2px;
-	margin-right: 2px;
+	margin-right: 3px;
 }
 
 .flip-card {
