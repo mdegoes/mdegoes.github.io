@@ -59,10 +59,10 @@ $(document).ready(function(){
               "Without a doubt my wife, son, and family.",
               "Both. I find the Mac is an exceptional work machine but the PC has some advantages in expense and performance.",
               "If you’ve not yet read it, I’d recommend a book titled Cracked It. It covers a number of very useful concepts and methodologies, including Design Thinking, Unknown Unknowns, Cognative Bias, and many more.",
-              "... ... ... Let’s just say it’s been a while since I had any. It left me when I was around 23..",
+              "... ... ... Let’s just say it’s been a while since I had any. It left me when I was around 23!",
               "Stateside, Ozo's Coffee in Boulder, Colorado is truly amazing. If you find yourself in Rome, get a Cappuccino. I've never had one which doesn't taste amazing!",
               "Yes, depending on my current workload and life events, I'm happy to do both. Please contact me.",
-              "Frank Herbert Dune. Just the first book mind you.",
+              "Frank Herbert's Dune. Just the first book mind you.",
               "...Just some harmless Javascript...you can trust me..."];
 
   $('#qa .questions p').click(function(){
@@ -113,7 +113,7 @@ $(document).ready(function(){
         $("#qa .questions p").css("pointer-events", "auto");
         $("#qa .questions").removeClass('disabled');
       }
-    }, 50);
+    }, 20);
   });
 
   //MOVING ILLUSION

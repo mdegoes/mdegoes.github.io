@@ -88,7 +88,8 @@ $(document).ready(function(){
 	        "Sean.Sanborn",
 	        "Chris.Michela",
 	        "Kevin.Hovell",
-	        "Nisha.Sultan"];
+	        "Nisha.Sultan",
+	        "James Eugair"];
 
 		getData(listAttendee);
 
