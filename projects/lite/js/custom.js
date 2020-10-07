@@ -81,7 +81,6 @@ $(document).ready(function(){
 	        "Javier.Ferraez",
 	        "John.Daley",
 	        "Mariana.Lopez",
-	        "Meghan.Mahar",
 	        "Stephanie.Groot",
 	        "Ruben.Araya",
 	        "Sarah.Cox",
