@@ -10,7 +10,7 @@ $(document).ready(function(){
   }
 
   //STATS
-  $('#portfolio .stats a').click(function(e){
+  /*$('#portfolio .stats a').click(function(e){
     e.preventDefault();
     //var imageURL = $(this).css('background-image'),
     var imageNum = $(this).attr('class');
@@ -28,7 +28,7 @@ $(document).ready(function(){
     $(".page-content").removeClass('active');
     $('#modal .foreground').html('');
     $('body').toggleClass('locked');
-  });
+  });*/
 
   //$('.switcher.photo').click(function(){
     //$('#photo .visual').toggleClass('active');
